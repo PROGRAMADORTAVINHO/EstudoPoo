@@ -13,6 +13,7 @@ public class Cachorro extends Lobo{
     public void reagir(String frase){
         if (frase == "Toma Comida" || frase == "Olá") {
             System.out.println("Abanar e Latir");
+            this.emitirSom();
         } else {
             System.out.println("Rosnar");
         }
@@ -24,6 +25,7 @@ public class Cachorro extends Lobo{
             System.out.println("Ignorar");
         } else {
             System.out.println("Abanar e Latir");
+            this.emitirSom();
         }
     }
     public void reagir(boolean dono){
@@ -31,6 +33,7 @@ public class Cachorro extends Lobo{
             System.out.println("Abanar");
          }else {
             System.out.println("Rosnar e Latir");
+            this.emitirSom();
         }
     }
     public void reagir(int idade, float peso){
@@ -39,6 +42,7 @@ public class Cachorro extends Lobo{
                 System.out.println("Abanar");
             } else {
                 System.out.println("Latir");
+                this.emitirSom();
             }
         } else {
             if (peso < 10) {
